@@ -1,6 +1,7 @@
 package koschei;
 
 import koschei.config.AppConfig;
+import koschei.models.Deth8;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -11,5 +12,7 @@ public class Application {
         KoscheiTheDeathless koscheiTheDeathless =
                 applicationContext.getBean(KoscheiTheDeathless.class);
         System.out.println(koscheiTheDeathless.getRulesByDeth());
+        Deth8 deth8 = new Deth8();
+        System.out.println(deth8.toString());
     }
 }
